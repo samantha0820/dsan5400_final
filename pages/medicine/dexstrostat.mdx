@@ -1,3 +1,43 @@
-# Dexstrostat
+import DrugSideEffects from '../../components/DrugSideEffects';
+import DrugSideEffects_fda from '../../components/DrugSideEffects_fda';
 
-This is the index page for the Dexstrostat!
+<style>
+{`
+  .two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 兩列平均分佈 */
+    gap: 2rem; /* 列之間的間距 */
+    margin: 2rem 0; /* 整體區塊的上下間距 */
+  }
+  @media (max-width: 768px) {
+    .two-column-layout {
+      grid-template-columns: 1fr; /* 在較小螢幕上改為單列顯示 */
+    }
+  }
+  .side-effect-block {
+    display: flex;
+    flex-direction: column; /* 內容垂直排列 */
+    align-items: flex-start; /* 內容左對齊 */
+  }
+  .side-effect-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+`}
+</style>
+
+# Dexstrostat 
+
+<div className="two-column-layout">
+  <div className="side-effect-block">
+    <div className="side-effect-title">Side Effects from FDA</div>
+    <DrugSideEffects_fda drugName="Desxtrostat" />
+  </div>
+  <div className="side-effect-block">
+    <div className="side-effect-title">Side Effects from Review</div>
+    <DrugSideEffects drugName="Desxtrostat" />
+  </div>
+</div>
+
+<div className="side-effect-title">Social Sentiments</div>
