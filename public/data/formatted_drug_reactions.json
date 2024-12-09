@@ -248,5 +248,30 @@
             "Weight decreased": "815"
         },
         "drugName": "Vyvanse"
+    },
+    {
+        "sideEffects": {
+            "Off label use": "7231",
+            "No adverse event": "6956",
+            "Drug ineffective": "6905",
+            "Product quality issue": "5561",
+            "Fatigue": "2967",
+            "Headache": "2925",
+            "Nausea": "2785",
+            "Anxiety": "2677",
+            "Depression": "2260",
+            "Insomnia": "2199",
+            "Drug dose omission": "2085",
+            "Disturbance in attention": "1991",
+            "Decreased appetite": "1984",
+            "Drug administration error": "1954",
+            "Wrong technique in drug usage process": "1933",
+            "Somnolence": "1790",
+            "Dizziness": "1764",
+            "Feeling abnormal": "1737",
+            "Aggression": "1704",
+            "Application site erythema": "1671"
+        },
+        "drugName": "Ritalin"
     }
 ]
